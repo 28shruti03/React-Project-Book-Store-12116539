@@ -29,7 +29,6 @@ function ProductCard({ product }) {
     const cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
     cartItems.push(cartItem);
     localStorage.setItem('cartItems', JSON.stringify(cartItems));
-    localStorage.clear();
   };
 
   return (
